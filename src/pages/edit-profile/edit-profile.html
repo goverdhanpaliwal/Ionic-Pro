@@ -1,0 +1,98 @@
+<ion-header>
+    <ion-toolbar class="no-border" color="primary">
+        <button ion-button menuToggle left>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Edit Profile</ion-title>
+        <ion-buttons end>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-header>
+
+
+<ion-content padding class="search-cars common-bg">
+
+  <ion-grid class="card" col-md-8 col-lg-6>
+      <ion-row>
+          <ion-col>
+            <ion-item>
+            <ion-label>tarun2018@gmail.com</ion-label>           
+          </ion-item>
+          </ion-col>
+        </ion-row>
+       
+                  <img src="assets/imgs/4.jpg">
+          
+    <ion-row>
+      <ion-col>
+        <ion-item>
+        <ion-label>First Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Last Name</ion-label>
+          <ion-input></ion-input>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-label>Gender</ion-label>
+                <ion-select [(ngModel)]="gender">
+                  <ion-option value="f">Female</ion-option>
+                  <ion-option value="m">Male</ion-option>
+                </ion-select>
+              </ion-item>
+        </ion-col>
+      </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button block color="primary" class="round" tappable (click)="homePage()">
+          <ion-icon name="log-in"> Submit</ion-icon>          
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+  <ion-grid class="card" col-md-8 col-lg-6>
+     
+    <ion-row>
+      <ion-col>
+        <ion-item>
+        <ion-label>Old Password</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>New Password</ion-label>
+          <ion-input></ion-input>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>Confirm Password</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        </ion-col>
+      </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button block color="primary" class="round" tappable (click)="homePage()">
+          <ion-icon name="log-in"> Change</ion-icon>         
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

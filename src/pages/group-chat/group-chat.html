@@ -1,0 +1,91 @@
+<ion-header>
+    <ion-toolbar class="no-border" color="primary">
+        <button ion-button menuToggle left>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Group Chat</ion-title>
+        <ion-buttons end>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-group >
+  
+      <ion-item-divider style="text-align: center;" class="msgdate" >30 May 2018</ion-item-divider>
+      <ion-item class="chat-page-ion-item">
+      <div >
+        <ion-row >
+        <p class="the-message" style="width:100%;">
+          <span class="myright">
+          <span text-wrap>hi</span>
+          <br>
+          <span class="mtime">1:55 PM</span>
+          </span>
+        </p>
+        </ion-row>
+        <ion-row >
+        <p class="the-message" style="width:100%;">
+          <span class="myleft">
+            <span class="mperson">Tarun</span><br>
+          <span text-wrap>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          <br>
+          <span class="mtime">2 PM</span>
+          </span>
+        </p>
+        </ion-row>
+        <ion-row >
+          <p class="the-message" style="width:100%;">
+            <span class="myright">
+            <span text-wrap>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+            <br>
+            <span class="mtime">1:55 PM</span>
+            </span>
+          </p>
+          </ion-row>
+          <ion-row >
+            <p class="the-message" style="width:100%;">
+              <span class="myright">
+              <span text-wrap>hi</span>
+              <br>
+              <span class="mtime">1:55 PM</span>
+              </span>
+            </p>
+            </ion-row>
+            <ion-row >
+            <p class="the-message" style="width:100%;">
+              <span class="myleft">
+              <span class="mperson">Anit</span><br>
+              <span text-wrap>Lorem </span>
+              <br>
+              <span class="mtime">2 PM</span>
+              </span>
+            </p>
+            </ion-row>
+            <ion-row >
+              <p class="the-message" style="width:100%;">
+                <span class="myright">
+                <span text-wrap>Ipsum</span>
+                <br>
+                <span class="mtime">1:55 PM</span>
+                </span>
+              </p>
+              </ion-row>
+      </div>
+      </ion-item>
+    </ion-item-group>
+    </ion-list>
+
+
+</ion-content>
+<ion-footer>
+<ion-toolbar class="footeer ph16">
+  <ion-textarea placeholder="Type your message here" [(ngModel)]="message"></ion-textarea>
+  <ion-buttons end>
+    <button ion-button icon-right>
+      <ion-icon name="send" color="primary"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-footer>

@@ -1,0 +1,21 @@
+page-home {
+    .item{
+        padding-left: 0px !important;
+    }
+    .card-content{
+        padding-top: 0px !important;
+    }
+    .card-title{
+        padding-top: 0px !important;
+    }
+    .segment-ios .segment-button:last-of-type{
+        border-bottom-right-radius:0px !important;
+        border-top-right-radius:0px !important;
+    }
+    .segment-ios .segment-button:first-of-type{
+        border-top-right-radius:0px !important;
+        border-top-left-radius:0px !important;
+        border-bottom-left-radius:0px !important;
+
+    }
+}

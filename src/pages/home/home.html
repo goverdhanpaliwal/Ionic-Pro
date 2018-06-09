@@ -1,0 +1,288 @@
+
+<ion-header >  
+    <ion-toolbar class="no-border" color="primary">
+        <button ion-button menuToggle left>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Posts</ion-title>
+        <ion-buttons end>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-segment [(ngModel)]="tasks">
+          <ion-segment-button value="Pending">
+            Pending
+          </ion-segment-button>
+          <ion-segment-button value="Completed">
+            Completed
+          </ion-segment-button>
+        </ion-segment>
+  </ion-header>
+<ion-content>
+  <div [ngSwitch]="tasks">
+    <ion-list *ngSwitchCase="'Completed'">
+      <ion-card>
+        <ion-item>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+            </ion-card-title>
+            <ion-col>
+              <span>05-06-2018</span>
+            </ion-col>
+            <span>11:15 am</span>
+            <p text-wrap>
+              The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+            <ion-row>
+              <ion-col>
+                <label>
+                  <div>Driver Name : Tarun
+                    <span>
+                      <ion-col right text-right>
+                        <ion-note>
+                          11:00 am
+                        </ion-note>
+                      </ion-col>
+                    </span>
+                  </div>
+                </label>
+                <label>
+                  <div>Completed by : Mark
+                    <span>
+                      <ion-col right text-right>
+                        <ion-note>
+                          12:00 pm
+                        </ion-note>
+                      </ion-col>
+                    </span>
+                  </div>
+                </label>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+            </ion-card-title>
+            <ion-col>
+              <span>05-06-2018</span>
+            </ion-col>
+
+            <span>11:15 am</span>
+            <p text-wrap>
+              The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+            <ion-row>
+              <ion-col>
+                <label>
+                  <div>Driver Name : Tarun
+                    <span>
+                      <ion-col right text-right>
+                        <ion-note>
+                          11:00 am
+                        </ion-note>
+                      </ion-col>
+                    </span>
+                  </div>
+                </label>
+                <label>
+                  <div>Completed by : Mark
+                    <span>
+                      <ion-col right text-right>
+                        <ion-note>
+                          12:00 pm
+                        </ion-note>
+                      </ion-col>
+                    </span>
+                  </div>
+                </label>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+            </ion-card-title>
+            <ion-col>
+              <span>05-06-2018</span>
+            </ion-col>
+
+            <span>11:15 am</span>
+            <p text-wrap>
+              The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+            <ion-row>
+              <ion-col>
+                <label>
+                  <div>Driver Name : Tarun
+                    <span>
+                      <ion-col right text-right>
+                        <ion-note>
+                          11:00 am
+                        </ion-note>
+                      </ion-col>
+                    </span>
+                  </div>
+                </label>
+                <label>
+                  <div>Completed by : Mark
+                    <span>
+                      <ion-col right text-right>
+                        <ion-note>
+                          12:00 pm
+                        </ion-note>
+                      </ion-col>
+                    </span>
+                  </div>
+                </label>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+            </ion-card-title>
+            <ion-col>
+              <span>05-06-2018</span>
+            </ion-col>
+
+            <span>11:15 am</span>
+            <p text-wrap>
+              The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+            <ion-row>
+              <ion-col>
+                <label>
+                  <div>Driver Name : Tarun
+                    <span>
+                      <ion-col right text-right>
+                        <ion-note>
+                          11:00 am
+                        </ion-note>
+                      </ion-col>
+                    </span>
+                  </div>
+                </label>
+                <label>
+                  <div>Completed by : Mark
+                    <span>
+                      <ion-col right text-right>
+                        <ion-note>
+                          12:00 pm
+                        </ion-note>
+                      </ion-col>
+                    </span>
+                  </div>
+                </label>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Pending'">
+      <ion-card>
+        <ion-item>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+            </ion-card-title>
+            <ion-col>
+              <span>05-06-2018</span>
+            </ion-col>
+            <span>11:15 am</span>
+            <p text-wrap>
+              The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+            <ion-row>
+              <ion-col>
+                <label>
+                  <div>Status : Pending</div>
+                </label>
+              </ion-col>
+
+            </ion-row>
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+            </ion-card-title>
+            <ion-col>
+              <span>05-06-2018</span>
+            </ion-col>
+            <span>11:15 am</span>
+            <p text-wrap>
+              The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+            <ion-row>
+              <ion-col>
+                <label>
+                  <div>Acknowledge by
+                    <br> Tarun
+                    <span>11:30 am</span>
+                  </div>
+                </label>
+              </ion-col>
+              <ion-col>
+                <button ion-button icon-left small tappable>
+                  Mark As Completeds
+                </button>
+              </ion-col>
+
+            </ion-row>
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+            </ion-card-title>
+            <ion-col>
+              <span>05-06-2018</span>
+            </ion-col>
+            <span>11:15 am</span>
+            <p text-wrap>
+              The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+            <ion-row>
+              <ion-col>
+                <label>
+                  <div>Acknowledge by
+                    <br> Tarun
+                    <span>11:30 am</span>
+                  </div>
+                </label>
+              </ion-col>
+              <ion-col>
+                <button ion-button icon-left small>
+                  <div>Mark As Completed </div>
+                </button>
+              </ion-col>
+
+            </ion-row>
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+    </ion-list>
+  </div>
+</ion-content>

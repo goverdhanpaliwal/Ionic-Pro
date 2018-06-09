@@ -1,0 +1,8 @@
+{
+  "name": "driver-old",
+  "app_id": "c961c793",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

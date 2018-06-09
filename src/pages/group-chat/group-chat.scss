@@ -1,0 +1,260 @@
+page-group-chat {
+    .msgdate{
+        font-size: 0.7em;
+    }
+
+    .footeer.toolbar .toolbar-background{
+        background-color: #F2F2F2 !important;
+    }
+
+    .chat {
+        width: 400px;
+    }
+    
+    
+    .bubble{
+        background-color: #F2F2F2;
+        border-radius: 3px;
+        box-shadow: 0 0 6px #B2B2B2;
+        display: inline-block;
+        padding: 10px 18px;
+        position: relative;
+        vertical-align: top;
+
+    }
+    
+
+    .bubble:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2%;
+        width: 0;
+        height: 0;
+        border: 24px solid transparent;
+        border-right-color: #00aabb;
+        border-left: 0;
+        border-top: 0;
+        margin-top: -4px;
+        margin-left: -20px;
+    }
+    
+    .me {
+        float: left;   
+        margin: 5px 45px 5px 20px;    
+        background-color: #F2F2F2;     
+    }
+    
+    .me::before {
+        transform:             rotate( 46deg ) skew( -35deg );
+        -moz-transform:    rotate( 46deg ) skew( -35deg );
+        -ms-transform:     rotate( 46deg ) skew( -35deg );
+        -o-transform:      rotate( 46deg ) skew( -35deg );
+        -webkit-transform: rotate( 46deg ) skew( -35deg );
+        box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+        left: -6px;
+        top:0px;           
+    }
+    
+    .you {
+        float: right;    
+        margin: 5px 82px 5px 45px;
+        background-color: #01b0cf;    
+        color: #F2F2F2;     
+    }
+    
+    .you::before {
+        transform:             rotate( -9deg ) skew( -44deg );
+        -moz-transform:    rotate( -9deg ) skew( -44deg );
+        -ms-transform:     rotate( -9deg ) skew( -44deg );
+        -o-transform:      rotate( -9deg ) skew( -44deg );
+        -webkit-transform: rotate( -9deg ) skew( -44deg );
+        box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+        right: -6px;   
+        background-color: #01b0cf;  
+    }
+    .textblock{
+        text-align: right;
+    }
+
+    .title-item{
+        background:transparent;
+        color:white;
+    }    
+    .chat-page-ion-item ion-row{
+        padding-left: 20px;
+        padding-right: 10px;        
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .chat-page-ion-item .optionsbutton{
+        color:white;
+    }
+    .blocked-message{
+        color:#ffffff;
+        font-size: 15px;
+    }
+    .chat-page-ion-item .mtime{
+        font-size:1rem;
+    }
+    .myright .mtime{
+        color:#e8e8e8;
+        float: right;
+    }
+.myright-image .mtime-image{
+        color: #FFFFFF; 
+    position: absolute;
+      bottom: 20px;
+    left: 30px;
+    }
+
+    .myleft:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 1%;
+        width: 0;
+        height: 0;
+        border: 24px solid transparent;
+        border-right-color: #E6E5EB;
+        border-left: 0;
+        border-top: 0;
+        margin-top: -2px;
+        margin-left: -16px;
+    }
+    .myright:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 1%;
+        width: 0;
+        height: 0;
+        border: 24px solid transparent;
+        border-left-color:#c1a7e8;
+        border-right: 0;
+        border-top: 0;
+        margin-top: -0.5px;
+        margin-right: -12px;
+    }
+ .myleft-image .mtime-image{
+        color: #FFFFFF; 
+    position: absolute;    
+    bottom: 20px;
+    left: 30px;
+    }
+
+    .myleft .mtime{
+        color:#636363;
+        float: right;
+    }
+    .myleft .mperson{
+        color:#636363;
+        float: left;
+        font-weight: bold;
+    }
+
+    .title-item ion-avatar{
+        margin-right:8px;
+    }
+
+    .title-item .item-inner{
+        border-style:none!important;
+    }
+     .the-message{
+         padding:0;
+     }
+     ion-item-divider,ion-item{
+         padding:0!important;
+         margin:0!important;
+     }
+     .item-inner{
+         padding:0!important;
+         margin:0!important;
+     }
+    .the-message .myright {
+        float:right;
+        max-width:85%;
+        background-color:#c1a7e8;
+        color:white;  
+        padding: 6px 10px;
+        position: relative;
+        vertical-align: top;
+        border: 1px solid lavender;
+        border-radius: 5%;
+        font-size: 15px;
+    }
+     .the-message .myright-image {
+     width: 50%;
+    background: transparent;
+    padding: 6px 10px;
+    position: relative;
+    //height: 50%;
+        float: right;
+    vertical-align: top;
+    }
+    .myleft{
+        float:left!important;
+        max-width:85%;
+        background-color:#E6E5EB;
+        color:black;  
+        padding: 6px 10px;
+        position: relative;
+        vertical-align: top;
+        border: 1px solid lavender;
+        border-radius: 5%;
+        font-size: 15px;
+    }
+   .the-message  .myleft-image{
+        float:left!important;
+       width: 50%;
+    background: transparent;
+    padding: 6px 10px;
+    position: relative;
+   // height: 50%;
+    vertical-align: top;
+    }
+    ion-item-divider{
+        border-bottom:0px;
+    }
+
+    .container { 
+        z-index: -1;
+        transition: z-index 0.1s step-end;        
+        width: 100%;
+        height: 10%;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &.busy {
+            z-index: 9999;
+            transition: z-index 0.1s step-start;
+            .backdrop {
+            opacity: 0.3;
+            }
+        }
+        
+        .backdrop {
+            opacity: 0.01;
+            transition: opacity 0.1s;
+        }
+        
+        ion-spinner {
+            
+            width: 40px;
+            height: 40px;
+        }
+        
+    }
+    [contenteditable=true]:empty:after {
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+    padding-left: 10px;
+    padding-top:10px;
+}
+.editableContent {
+background:#FFF; height: 45px;padding-left:5px;padding-top:5px; user-select: text;width: 100%;
+    }.editableContent:hover {
+cursor:text;
+    }
+}
